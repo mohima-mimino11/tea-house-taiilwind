@@ -5,10 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- tailwind css -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'Bebas Neue': 'Manrope',
+          }
+        }
+      }
+    }
+  </script>
   <title>TEA HOUSE</title>
 </head>
 <body>
-  <header>
+  <header class="bg-[ #FFF] container mx-auto">
+    <!-- banner -->
+    <div class="mt-16 flex  gap-x-52 lg:flex-row lg:gap-x-52 md:flex-col md:gap-y-52 sm:flex-col   container mx-auto">
+      <div>
+        <h1 class="text-7xl text-[#1C1C1C]">It's good <br> tea time at The <br> Tea House</h1>
+        <p class="text-[#1C1C1C] mt-7">Tea and Botanical Solutions Supplier Give Optimum <br> Satisfaction To Your Taste Buds.</p>
+        <button class="mt-7 rounded-lg bg-gradient-to-r from-[#FF8938] to-[#F00] w-52 h-16 text-white">Explore More 
+        <img class="inline" src="images/arrow.png" alt="">  
+        </button>
+      </div>
+      <div>
+        <img  src="images/banner.png" alt="">
+        <div class="bg-[#fff] rounded-lg shadow-2xl w-64 h-24 flex gap-7 relative bottom-28  left-20">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fcd34d" className="w-2 h-6">
+            <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clipRule="evenodd" />
+          </svg>
+          <div>
+            <p class="text-[#1C1C1C] text-3xl ">5.00</p>
+            <p class="text-[#777] text-sm">Trust Pilot Ratings</p>
+          </div>
+        </div>
+        
+        
+        
+      </div>
+    </div>
 
   </header>
   <main>
